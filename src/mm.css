@@ -1,0 +1,1081 @@
+body {
+  background: #fff;
+  color: #464a50;
+  font-size: 20px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0
+}
+
+.board {
+  font-size: 16px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300
+}
+
+a {
+  color: #1893d2;
+  font-weight: 400
+}
+
+a:hover {
+  transition-duration: .1s
+}
+
+main {
+  text-align: center;
+  padding-top: 30px
+}
+
+table.table td, table.table th {
+  padding: .5rem
+}
+
+button:hover {
+  cursor: pointer
+}
+
+.hide {
+  display: none!important
+}
+
+.fa-question-circle {
+  color: #35baf2
+}
+
+[class*=" icon-"]:before, [class^=icon-]:before {
+  vertical-align: baseline
+}
+
+.btn-primary {
+  background: #35baf2;
+  border: #03a9f4
+}
+
+.btn-primary:hover {
+  background: #03a9f4
+}
+
+.btn-back {
+  color: #fff;
+  background-color: #49ca5f;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 20px
+}
+
+.btn-back:hover {
+  background-color: #40be56;
+  color: #fff
+}
+
+input::-webkit-input-placeholder {
+  color: #aaa!important
+}
+
+input::-moz-placeholder {
+  color: #aaa!important
+}
+
+input::-ms-placeholder {
+  color: #aaa!important
+}
+
+input::placeholder {
+  color: #aaa!important
+}
+
+.table-hover tbody tr:hover, .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, .025)
+}
+
+.color-block {
+  background-image: linear-gradient(to right, #0578c0, #24a3dd);
+  color: #fff;
+  margin: 50px 0;
+  padding: 40px 0
+}
+
+.color-block h2 {
+  margin-bottom: 30px;
+  font-size: 50px
+}
+
+.color-block a {
+  color: #fff;
+  text-decoration: underline
+}
+
+.color-block i {
+  font-size: 34px
+}
+
+.color-block .col-md-4 {
+  margin-bottom: 30px
+}
+
+nav.navbar {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, .12) 0 1px 3px;
+  padding: 12px 4%
+}
+
+nav.navbar img {
+  width: 100%;
+  max-width: 200px
+}
+
+nav.navbar .navbar-toggler {
+  border: none
+}
+
+nav.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(20, 20, 20, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+nav.navbar .navbar-nav .nav-link {
+  color: #464a50;
+  font-size: 15px
+}
+
+nav.navbar .navbar-nav .nav-link.active {
+  color: #1893d2
+}
+
+@media screen and (min-width:992px) {
+  nav.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+}
+
+#logo {
+  width: 100%;
+  max-width: 450px;
+  padding: 50px 30px 40px 30px;
+  display: block
+}
+
+#analysis-url {
+  border: 1px solid #eee;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px
+}
+
+.A, .B, .C, .D, .E, .F, .NA {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px
+}
+
+.A {
+  background: #3fce57
+}
+
+.B {
+  background: #7eff49
+}
+
+.C {
+  background: #ffe212
+}
+
+.D {
+  background: #ffab12
+}
+
+.E, .F {
+  background: #ff1212
+}
+
+.NA {
+  background: #ddd
+}
+
+.screenshotWrapper {
+  display: inline-block;
+  position: relative;
+  background: #000
+}
+
+.screenshotWrapper>div {
+  position: relative;
+  overflow: hidden
+}
+
+.screenshotWrapper>div:hover {
+  overflow: auto
+}
+
+.screenshotWrapper .screenshotImage {
+  width: 100%
+}
+
+.screenshotWrapper .screenshotError {
+  color: #fff
+}
+
+.screenshotWrapper.desktop {
+  border: .2em solid #aaa;
+  padding: .5em;
+  border-top-left-radius: .4em;
+  border-top-right-radius: .4em
+}
+
+.screenshotWrapper.desktop:before {
+  position: absolute;
+  width: 15em;
+  height: .6em;
+  bottom: -.75em;
+  left: -1em;
+  background: #ccc;
+  border-bottom-left-radius: .2em;
+  border-bottom-right-radius: .2em;
+  content: " "
+}
+
+.screenshotWrapper.desktop:after {
+  position: absolute;
+  width: .4em;
+  height: .2em;
+  bottom: -.55em;
+  left: 12.5em;
+  background: #0f0;
+  content: " "
+}
+
+.screenshotWrapper.desktop>div {
+  width: 12em;
+  height: 6.75em
+}
+
+.screenshotWrapper.phone {
+  border: .07em solid #ccc;
+  padding: 1em .3em 1.5em;
+  border-radius: .6em
+}
+
+.screenshotWrapper.phone:before {
+  position: absolute;
+  width: .8em;
+  height: .8em;
+  bottom: .3em;
+  left: 3.3em;
+  border: .07em solid #ccc;
+  border-radius: .5em;
+  content: " "
+}
+
+.screenshotWrapper.phone:after {
+  position: absolute;
+  width: 1em;
+  height: .1em;
+  bottom: 13.9em;
+  left: 3.2em;
+  background: #555;
+  border-radius: .05em;
+  content: " "
+}
+
+.screenshotWrapper.phone>div {
+  width: 6.75em;
+  height: 12em
+}
+
+.screenshotWrapper.tablet {
+  border: .07em solid #ccc;
+  padding: .8em .5em .9em;
+  border-radius: .6em
+}
+
+.screenshotWrapper.tablet:before {
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  bottom: .15em;
+  left: 4.35em;
+  border: .07em solid #ccc;
+  border-radius: .4em;
+  content: " "
+}
+
+.screenshotWrapper.tablet>div {
+  width: 8.25em;
+  height: 11em
+}
+
+#help {
+  padding: 40px 0;
+  margin-top: 50px
+}
+
+
+
+.execution {
+  text-align: center
+}
+
+.selectScript {
+  padding-bottom: 2em;
+  font-size: .9em
+}
+
+.selectScript select {
+  max-width: 30em
+}
+
+.selectScript.empty {
+  font-size: .8em
+}
+
+.selectScript.empty select {
+  width: 10em
+}
+
+.filters {
+  margin: 1em auto;
+  padding: .5em;
+  min-width: 30em;
+  width: 30%;
+  border: 1px dotted #aaa;
+  text-align: left
+}
+
+.subFilters {
+  margin-left: 3em;
+  font-size: .9em
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-spacing: .25em
+}
+
+.table>a, .table>div {
+  display: table-row
+}
+
+.table>.headers>div {
+  font-weight: 700;
+  padding: .5em 1em
+}
+
+.table>a>div, .table>div>div {
+  padding: .5rem;
+  background: #f2f2f2;
+  display: table-cell;
+  text-align: left
+}
+
+.table>div.jsError>.type, .table>div.jsError>.value {
+  color: #e74c3c;
+  font-weight: 700
+}
+
+.table>div.windowPerformance>div, .table>div.windowPerformance>div.startTime {
+  background: #ebd8e2
+}
+
+.table>div.showingDetails>div {
+  background: #f1c40f
+}
+
+.table>div.highlight>div.startTime {
+  background-color: #c0f090
+}
+
+.table>div.highlight-remove {
+  transition: 3s
+}
+
+.table>div.highlight-remove>div.startTime {
+  transition: background-color 3s ease-in
+}
+
+.table>div>.index {
+  color: #bbb;
+  word-break: normal
+}
+
+.table>div>.type {
+  white-space: nowrap
+}
+
+.table .children {
+  margin-top: .2em;
+  font-size: .8em;
+  line-height: 1.6em
+}
+
+.table .child {
+  margin-left: .5em
+}
+
+.table .child>.child {
+  margin-left: 1em
+}
+
+.table .child:before {
+  content: "↳"
+}
+
+.table .child .childArgs {
+  display: none
+}
+
+.table .child span {
+  position: relative
+}
+
+.table .child span:hover {
+  background: #ebd8e2
+}
+
+.table .child span:hover div {
+  display: inline-block
+}
+
+.table .child span:hover .childArgs {
+  display: block;
+  position: absolute;
+  padding: 0 1em 0 2em;
+  left: 100%;
+  top: 0;
+  background: #ebd8e2;
+  line-height: 1.3em;
+  height: 1.3em;
+  z-index: 2
+}
+
+.table .showingDetails .child span:hover {
+  background: inherit
+}
+
+.table .showingDetails .child span:hover .childArgs {
+  display: none
+}
+
+.table>div>.value {
+  width: 70%;
+  word-break: break-all
+}
+
+.table>div>.details {
+  position: relative
+}
+
+.table .details .icon-question {
+  color: #f1c40f;
+  cursor: pointer
+}
+
+.table .icon-warning {
+  display: inline-block;
+  width: .8em
+}
+
+.detailsOverlay {
+  display: none;
+  position: absolute;
+  right: 3em;
+  top: -3em;
+  width: 45em;
+  min-height: 1em;
+  padding: 0 1em 1em;
+  background: #fff;
+  border: 2px solid #f1c40f;
+  border-radius: .5em;
+  z-index: 2
+}
+
+@media screen and (max-width:1024px) {
+  .detailsOverlay {
+    width: 25em
+  }
+}
+
+.showDetails .detailsOverlay {
+  display: block
+}
+
+.detailsOverlay .closeBtn {
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  color: #f1c40f;
+  cursor: pointer
+}
+
+.detailsOverlay .advice {
+  color: #e74c3c;
+  font-weight: 700
+}
+
+.detailsOverlay .trace {
+  word-break: break-all
+}
+
+.execution .icon-warning {
+  color: #e74c3c;
+  cursor: pointer
+}
+
+.queryWithoutResultsFilterOn>div {
+  display: none
+}
+
+.queryWithoutResultsFilterOn>div.queryWithoutResults {
+  display: table-row
+}
+
+.jQueryCallOnEmptyObjectFilterOn>div {
+  display: none
+}
+
+.jQueryCallOnEmptyObjectFilterOn>div.jQueryCallOnEmptyObject {
+  display: table-row
+}
+
+.eventNotDelegatedFilterOn>div {
+  display: none
+}
+
+.eventNotDelegatedFilterOn>div.eventNotDelegated {
+  display: table-row
+}
+
+.jsErrorFilterOn>div {
+  display: none
+}
+
+.jsErrorFilterOn>div.jsError {
+  display: table-row
+}
+
+.tagline {
+  margin: 0 auto
+}
+
+.tagline h1 {
+  font-size: 22px
+}
+
+.tagline p {
+  font-size: 14px
+}
+
+#analyze {
+  margin: 0 auto 80px auto
+}
+
+#analyze .form-row {
+  text-align: left
+}
+
+#analyze #analyze-url {
+  margin-bottom: 15px
+}
+
+#analyze #device-option .btn:not(.active) {
+  border-color: #efefef
+}
+
+#analyze #device-option, #analyze button {
+  width: 100%
+}
+
+#analyze button.btn-primary {
+  background-image: linear-gradient(to right, #49ca5f, #3fce57);
+  margin-bottom: 10px
+}
+
+@media screen and (min-width:768px) {
+  #analyze #analyze-url, #analyze button {
+    margin-bottom: 0
+  }
+  #analyze #device-option {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0
+  }
+  #analyze button.btn-primary {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 7px 0;
+    margin-bottom: 0;
+    width: 96%
+  }
+}
+
+.preview {
+  text-align: left
+}
+
+.preview .col-md-4 {
+  margin-bottom: 30px
+}
+
+.preview img {
+  width: 100%
+}
+
+.summary {
+  text-align: center
+}
+
+.summary .globalScore {
+  display: table;
+  width: 60%;
+  margin: 3em auto
+}
+
+.summary .globalScore>div {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle
+}
+
+.summary .globalScore .globalGrade {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 6px;
+  font-size: 80px;
+  margin: 0 auto
+}
+
+.summary .globalScore .on100 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: .5em 0 1em
+}
+
+.summary .globalScore .screenshotWrapper:hover {
+  opacity: .75
+}
+
+.summary .globalScore .screenshotWrapper:hover:after {
+  position: absolute;
+  width: 1.25em;
+  height: 1.25em;
+  top: .7em;
+  left: 1.55em;
+  font-size: 3em;
+  color: #fff;
+  background: #000;
+  border-radius: .2em;
+  text-align: center;
+  content: "+";
+  opacity: .85
+}
+
+.summary .globalScore .screenshotWrapper.phone:hover:after {
+  top: 1.7em;
+  left: .64em
+}
+
+.summary .globalScore .screenshotWrapper.tablet:hover:after {
+  top: 1.5em;
+  left: .9em
+}
+
+@media screen and (min-width:992px) {
+  .summary .notations {
+    width: 70%;
+    margin: 0 auto
+  }
+}
+
+.notations .category-header {
+  overflow: auto;
+  margin: 40px 0 5px 0;
+  padding: 0 .6rem
+}
+
+.notations .category-header .category, .notations .category-header .categoryScore {
+  float: left
+}
+
+.notations .category-header .categoryScore {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 0;
+  display: block;
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 22px;
+  color: #fff
+}
+
+.notations .category-header .category {
+  font-size: 22px;
+  text-transform: uppercase
+}
+
+.notations table {
+  border-bottom: 1px solid #dee2e6
+}
+
+.notations table .td-grade, .notations table .td-score {
+  width: 15%
+}
+
+.notations table .td-rule {
+  width: 60%
+}
+
+.notations table .td-cta {
+  width: 10%
+}
+
+.notations table tr:hover {
+  cursor: pointer
+}
+
+.summary .notations .warning, .summary .notations .warning .fa-question-circle {
+  color: #ff1212
+}
+
+#queue-box {
+  min-height: 319px
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 2.5em
+}
+
+.statusSubMessage {
+  font-size: .8em;
+  margin-bottom: 20px
+}
+
+.rule.board {
+  text-align: center
+}
+
+.rule.board h3 {
+  padding: 10px 0
+}
+
+.rule .ruleTable {
+  background: #f8f9fa;
+  padding: 30px;
+  margin: 30px auto
+}
+
+.rule .score {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 6px;
+  font-size: 80px;
+  margin: 20px auto
+}
+
+.rule .okThreshold {
+  font-style: italic;
+  font-size: .9em
+}
+
+.rule .message {
+  width: 80%;
+  margin: 1.5em auto
+}
+
+.rule .message p {
+  margin: .5em
+}
+
+.rule .message ul {
+  list-style-type: none;
+  padding-left: 0
+}
+
+.rule .message li:before {
+  content: '\25e6';
+  margin-right: .3em;
+  font-size: 1.2em;
+  position: relative;
+  top: .1em
+}
+
+.rule .warning {
+  width: 90%;
+  margin: -1em auto 2em;
+  background: #fee;
+  border: 1px dashed #e74c3c;
+  color: #e74c3c;
+  border-radius: .5em
+}
+
+.rule .offendersTable {
+  display: table;
+  border-spacing: 0 .25em;
+  margin: 0 auto
+}
+
+.rule .offendersTable>div {
+  display: table-row
+}
+
+.rule .offendersTable>div>div {
+  display: table-cell;
+  background: #f9f9f9;
+  padding: .5rem;
+  word-wrap: break-word;
+  word-break: break-all
+}
+
+.rule .offendersTable>div>div:hover {
+  background: #f4f4f4
+}
+
+.rule .offendersTable.no-offenders-style>div>div {
+  padding: 0
+}
+
+@media screen and (min-width:992px) {
+  .rule .offendersTable {
+    width: 70%;
+    margin: 0 auto
+  }
+}
+
+.rule .notFound {
+  font-size: 1em
+}
+
+.rule .notFound h2 {
+  font-size: 3em;
+  margin-bottom: 1em
+}
+
+.rule .startTime {
+  display: none
+}
+
+.offendersTable .offenderButton, .value .offenderButton {
+  display: inline-block;
+  position: relative;
+  background: #efe;
+  padding: 0 .5em;
+  margin: .2em 0;
+  border-radius: .4em;
+  z-index: 1;
+  cursor: pointer
+}
+
+.offendersTable .offenderButton.opens, .value .offenderButton.opens {
+  padding-right: .75em
+}
+
+.offendersTable .offenderButton.opens:after, .value .offenderButton.opens:after {
+  position: relative;
+  left: .5em;
+  content: '\25BC';
+  font-size: .8em
+}
+
+.offendersTable .offenderButton>div, .value .offenderButton>div {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  background: inherit;
+  border-bottom-left-radius: .4em;
+  border-bottom-right-radius: .4em;
+  border-top: 1px solid #999;
+  z-index: 2
+}
+
+.offendersTable .offenderButton .domTree, .value .offenderButton .domTree {
+  text-align: left;
+  white-space: nowrap
+}
+
+.offendersTable .offenderButton .domTree>div, .value .offenderButton .domTree>div {
+  margin: .5em
+}
+
+.offendersTable .offenderButton .domTree>div div, .value .offenderButton .domTree>div div {
+  margin-left: 1em
+}
+
+.offendersTable .offenderButton .backtrace, .offendersTable .offenderButton .cssFileAndLine, .value .offenderButton .backtrace, .value .offenderButton .cssFileAndLine {
+  white-space: nowrap;
+  padding: .5em
+}
+
+.offendersTable .offenderButton.opens:hover, .value .offenderButton.opens:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #ffe0cc;
+  z-index: 2
+}
+
+.offendersTable .offenderButton.opens:hover>div, .value .offenderButton.opens:hover>div {
+  display: block;
+  background: #ffe0cc
+}
+
+.offendersTable .smallerOffenders, .value .smallerOffenders {
+  font-size: .9em
+}
+
+.offendersHtml {
+  display: inline-block
+}
+
+.domTree div {
+  text-align: left;
+  margin-left: 1em
+}
+
+.domTree div span:only-child {
+  font-weight: 700
+}
+
+.domTree div span:only-child span {
+  font-style: italic;
+  font-weight: 400
+}
+
+.checker {
+  background-color: #ddd;
+  background-image: linear-gradient(45deg, #aaa 25%, transparent 25%, transparent 75%, #aaa 75%, #aaa), linear-gradient(45deg, #aaa 25%, transparent 25%, transparent 75%, #aaa 75%, #aaa);
+  background-size: 1em 1em;
+  background-position: 0 0, .5em .5em
+}
+
+.colorPalette {
+  width: 30em;
+  border: 2px solid #000;
+  text-align: left
+}
+
+.colorPalette>div {
+  display: inline-block;
+  height: 2em;
+  position: relative
+}
+
+.colorPalette>div div {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  background: #fff;
+  padding: .5em;
+  border: 2px solid #f1c40f;
+  border-radius: .5em;
+  white-space: nowrap;
+  z-index: 3;
+  font-weight: 700
+}
+
+.colorPalette>div:hover div {
+  display: block
+}
+
+.colorPalette>div:hover:after {
+  content: " ";
+  position: absolute;
+  left: -.2em;
+  top: -.2em;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border: .2em solid #f1c40f
+}
+
+.similarColors {
+  margin: 1em;
+  width: 20em;
+  height: 6em
+}
+
+.similarColors>div {
+  display: inline-block;
+  width: 10em;
+  height: 3.5em;
+  padding-top: 2.5em
+}
+
+.totalWeightPie {
+  max-width: 20em;
+  margin: 2em auto 4em
+}
+
+.totalWeightPie canvas {
+  max-width: inherit
+}
+
+.offenderProblem {
+  font-weight: 700;
+  color: #e74c3c
+}
+
+.imageOffenders {
+  display: table;
+  border-spacing: 3em;
+  width: 90%;
+  margin: 0 auto
+}
+
+.imageOffenders>div {
+  display: table-row
+}
+
+.imageOffenders>div>div {
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #eee;
+  padding: 1rem
+}
+
+.imageOffenders img {
+  max-height: 10em;
+  max-width: 40em;
+  border: 1px solid #000;
+  margin-top: .5em
+}
+
+.smallPreview {
+  display: block;
+  max-height: 6em;
+  max-width: 16em;
+  border: 1px solid #000;
+  margin: 1em auto .2em
+}
+
+.screenshot.board {
+  text-align: center
+}
+
+.screenshot .screenshotWrapper {
+  font-size: 2.08333333333333em;
+  margin-bottom: .5em
+}
+
+.about {
+  margin: 3em auto;
+  width: 50%
+}
+
+.about p {
+  margin: 2em
+}
+
+.about a {
+  color: #fff
+}
