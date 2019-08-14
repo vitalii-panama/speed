@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 const fetch = require('isomorphic-fetch')
-const axios = require('axios');
 
 function Main () {
   const [url, setUrl] = useState(null)
@@ -15,35 +14,34 @@ function Main () {
       if (reged) {
         if (!reged.includes('https://')) {
           reged = 'https://' + reged
-        }console.log(`websiteUrl=${reged}`);
-				
-        // fetch('http://speedanalyzer.herokuapp.com/api/analyze', {
-				// 	method: 'POST',
-				// 	crossDomain:true,
-        //   headers: { 'Content-Type': 'application/x-www-form-url-encoded', Accept: 'application/json' },
-        //   body: "websiteUrl=https%3A%2F%2Fgucci-theme.myshopify.com"
-        // })
-        //   .then(response => console.log(response))
-				//   .catch(error => console.log(error))
-				
+        }console.log(`websiteUrl=${reged}`)
 
-				const requestBody = {
-					websiteUrl: 'https%3A%2F%2Fgucci-theme.myshopify.com'
-				}
-				
-				const config = {
-					headers: {
-						'Content-Type': 'application/x-www-form-urlencoded'
-					}
-				}
-				
-				axios.post('http://speedanalyzer.herokuapp.com/api/analyze', requestBody, config)
-					.then((result) => {
-						console.log(result)
-					})
-					.catch((err) => {
-						console.log(err)
-					})
+        fetch('https://speedanalyzer.herokuapp.com/api/analyze', {
+          method: 'POST',
+          crossDomain: true,
+          headers: { 'Content-Type': 'application/x-www-form-url-encoded', Accept: 'application/json' },
+          body: 'websiteUrl=https%3A%2F%2Fgucci-theme.myshopify.com'
+        })
+          .then(response => console.log(response))
+          .catch(error => console.log(error))
+
+        // const requestBody = {
+        //   websiteUrl: 'https%3A%2F%2Fgucci-theme.myshopify.com'
+        // }
+
+        // const config = {
+        //   headers: {
+        //     'Content-Type': 'application/x-www-form-urlencoded'
+        //   }
+        // }
+
+        // axios.post('http://speedanalyzer.herokuapp.com/api/analyze', requestBody, config)
+        //   .then((result) => {
+        //     console.log(result)
+        //   })
+        //   .catch((err) => {
+        //     console.log(err)
+        //   })
       }
     }
   }
