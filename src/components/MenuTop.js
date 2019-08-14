@@ -30,13 +30,13 @@ function MenuTop () {
     if (!isMobile) {
       return (
         <ul className='navbar-nav'>
-          <li> <a href='https://speedboostr.com/'>HOME</a> </li>
-          <li> <a href='https://analyze.speedboostr.com/'>SHOPIFY ANALYZER</a>
+          <li> <a href='/'>HOME</a> </li>
+          <li> <a href='/'>SHOPIFY ANALYZER</a>
           </li>
-          <li> <a href='https://speedboostr.com/services'>SERVICES</a> </li>
-          <li> <a href='https://speedboostr.com/about'>ABOUT</a> </li>
-          <li> <a href='https://speedboostr.com/contact'>CONTACT</a> </li>
-          <li> <a href='https://speedboostr.com/blog'>LEVEL UP (BLOG)</a> </li>
+          <li> <a href='/'>SERVICES</a> </li>
+          <li> <a href='/'>ABOUT</a> </li>
+          <li> <a href='/'>CONTACT</a> </li>
+          <li> <a href='/'>LEVEL UP (BLOG)</a> </li>
         </ul>
       )
     } else {

@@ -92,7 +92,7 @@ function Main () {
               <h3>Optimize</h3>
               <p><img alt='' src='https://img.icons8.com/cotton/64/000000/domain.png' /></p>
 
-              <p>Use our <a href='https://speedboostr.com/shopify-optimization'>Shopify Optimization Guide</a> or <a href='https://speedboostr.com/services'>Hire Us</a> to optimize your site.</p>
+              <p>Use our <a href='/'>Shopify Optimization Guide</a> or <a href='/'>Hire Us</a> to optimize your site.</p>
             </div>
           </div>
         </div>
